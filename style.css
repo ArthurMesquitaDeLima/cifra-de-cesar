@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#mesOriginal,
+#mesEncrypted {
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #333;
+    padding: 10px;
+    display: inline-block;
+    width: -webkit-fill-available;
+    box-sizing: border-box; 
+}
+
+span {
+    font-weight: normal;
+    color: #333;
+}
+
+#mesEncrypted span {
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        max-width: 350px;
+    }
+}
